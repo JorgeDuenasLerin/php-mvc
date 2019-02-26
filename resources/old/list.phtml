@@ -1,0 +1,8 @@
+<h1>Mi lista</h1>
+  <?php foreach($data as $noticia){ ?>
+    <p>
+      <div>Title</div>
+      <?=$noticia->getTexto()?>
+      <a href="/noticias/show/<?=$noticia->getId()?>">ver más</a>
+    </p>
+  <?php } ?>

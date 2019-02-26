@@ -1,0 +1,13 @@
+<h1>Bienvenido <?=$data['perfil']?></h1>
+<p>
+  <?php
+    $noticia = $data['noticia'];
+  ?>
+  <h3><?=$noticia->getTitulo()?></h3>
+  <div>
+    <?=$noticia->getTexto()?>
+  </div>
+  <span><?=$noticia->getFecha()?></span>
+</p>
+Publicidad:<br>
+<?=$data['publicidad']?>
